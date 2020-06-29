@@ -6,9 +6,9 @@ const ProfileHeader = ({ profileHeaderData }) => {
     return (
         <div>
             <Card className='shadow-sm rounded-0'>
-                <Card.Img src={ profileHeaderData.img } variant='top' height='150'></Card.Img>
+                <Card.Img src={ profileHeaderData.img } variant='top' height='auto'></Card.Img>
                 <Card.Body>
-                    <Image src={ profileHeaderData.img } className='avatar' height='75' width='75' roundedCircle />
+                    <Image src={ profileHeaderData.img } className='avatar' height='auto' width='150' />
                     <Row>
                         <Col>
                             <Card.Title>{ profileHeaderData.name }</Card.Title>

@@ -6,9 +6,9 @@ const ProfileCard = ({ profileCardData }) => {
     return (
         <div>
             <Card className='text-center shadow-sm rounded-0'>
-                <Card.Img src={ profileCardData.img } variant='top' height='75'></Card.Img>
+                <Card.Img src={ profileCardData.img } variant='top' height='auto' width="100%"></Card.Img>
                 <Card.Body>
-                    <Image src={ profileCardData.img } className='avatar' height='75' width='75' roundedCircle />
+                    <Image src={ profileCardData.img } className='avatar' height='auto' width='75' />
                     <Card.Title>{ profileCardData.name }</Card.Title>
                     <Card.Subtitle className='text-muted'>{ profileCardData.position }</Card.Subtitle>
                 </Card.Body>
